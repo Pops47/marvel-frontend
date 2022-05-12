@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Welcome />} />
+        <Route path="" element={<Welcome />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/character/:characterId" element={<CharacterById />} />
         <Route path="/comics" element={<Comics />} />
