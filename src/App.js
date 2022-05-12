@@ -5,7 +5,7 @@ import Welcome from "./pages/Welcome";
 import Characters from "./pages/Characters";
 import Comics from "./pages/Comics";
 import ComicsByCharacter from "./pages/ComicsByCharacter";
-import CharacterById from ".pages/CharacterById";
+import CharacterById from "./pages/CharacterById";
 import Favorites from "./pages/Favorites";
 
 function App() {

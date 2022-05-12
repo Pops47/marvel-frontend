@@ -5,6 +5,8 @@ function Comics() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
+  const [comicsSearch, setComicsSearch] = useState("");
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -25,6 +27,13 @@ function Comics() {
   ) : (
     <div className="container">
       <h1>Comics</h1>
+      <input
+        type="searchbar"
+        value={comicsSearch}
+        onChange={(e) => {
+          setComicsSearch(e.target.value);
+        }}
+      />
       <p>{data.count} comics</p>
       {data.results.map((comic) => {
         const { path, extension } = comic.thumbnail;
