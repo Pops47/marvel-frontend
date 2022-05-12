@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import CharacterById from "./CharacterById";
 
 function ComicsByCharacter() {
   const [data, setData] = useState();
@@ -28,6 +29,10 @@ function ComicsByCharacter() {
     <p>Loading...</p>
   ) : (
     <div className="container">
+      <h1>
+        Comics dans lequels on retrouve le personnage :
+        <CharacterById characterId={characterId} />{" "}
+      </h1>
       {data.comics.map((comic) => {
         const { path, extension } = comic.thumbnail;
         return (
