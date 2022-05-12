@@ -1,18 +1,20 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-function Characters() {
+function ComicsByCharacter() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  const navigate = useNavigate();
+
+  const { characterId } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://marvel-backend-by-pops.herokuapp.com/characters"
+          `https://marvel-backend-by-pops.herokuapp.com/comics/${characterId}`
         );
+
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -20,28 +22,18 @@ function Characters() {
       }
     };
     fetchData();
-  }, []);
+  }, [characterId]);
 
   return isLoading ? (
     <p>Loading...</p>
   ) : (
     <div className="container">
-      <h1>Caracters</h1>
-      <p>{data.count} personnages</p>
-      {data.results.map((character) => {
-        const { path, extension } = character.thumbnail;
-        const { name, description, _id } = character;
-
+      {data.comics.map((comic) => {
+        const { path, extension } = comic.thumbnail;
         return (
-          <div
-            key={_id}
-            onClick={() => {
-              navigate(`/comics/${_id}`);
-            }}
-          >
+          <div key={comic._id}>
             <img src={`${path}/portrait_medium.${extension}`} alt="" />
-            <p>{name}</p>
-            <p>{description}</p>
+            <p>{comic.title}</p>
           </div>
         );
       })}
@@ -49,4 +41,4 @@ function Characters() {
   );
 }
 
-export default Characters;
+export default ComicsByCharacter;
