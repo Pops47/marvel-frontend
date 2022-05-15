@@ -1,0 +1,34 @@
+.characterInComicspage {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 30px;
+  img {
+    height: 150px;
+    border-radius: 50%;
+  }
+  .pName {
+    font-size: 3em;
+  }
+  .pDesc {
+    display: none;
+  }
+}
+
+.characterInFavoritePage {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  .pName {
+    font-size: 1em;
+  }
+  .pDesc {
+    display: none;
+  }
+}

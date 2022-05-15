@@ -1,0 +1,22 @@
+.welcome {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+    position: relative;
+  }
+  div {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    .welcome-pop-up-images {
+      width: 20%;
+    }
+  }
+  .off {
+    display: none;
+  }
+}

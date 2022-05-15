@@ -1,7 +1,32 @@
 header {
-  border: solid black 1px;
-  height: 80px;
+  background-color: black;
+  height: 70px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 10px;
+  border-bottom: groove grey 5px;
+  .logo-marvel:hover {
+    cursor: pointer;
+  }
+  div {
+    flex: 1;
+    display: none;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  nav {
+    flex: 3;
+    display: flex;
+
+    button {
+      flex: 1;
+      border: none;
+      background-color: black;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+    button:hover {
+      border-bottom: solid darkred 4px;
+    }
+  }
 }

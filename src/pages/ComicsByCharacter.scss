@@ -1,0 +1,58 @@
+.listOfComics {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  .element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: solid darkred 2px;
+    height: 300px;
+    width: calc((100% - 50px) / 6);
+    img {
+      height: 200px !important;
+      object-fit: cover;
+      border-radius: 10%;
+    }
+    .titleAndFav {
+      display: flex;
+      justify-content: space-between;
+      .pTitle {
+        max-width: calc(100% - 25px);
+      }
+      button {
+        z-index: 3;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        font-size: 16px;
+      }
+      .fav-off:hover {
+        background-color: grey;
+      }
+      .fav-on {
+        background-color: darkred;
+      }
+    }
+    .pDesc {
+      font-family: Roboto;
+      font-weight: 200;
+      opacity: 30%;
+      padding: 10px;
+      overflow: auto;
+      display: none;
+      padding: 10px;
+    }
+  }
+  div:hover .pDesc {
+    display: block;
+    position: absolute !important;
+    bottom: 0;
+    font-size: 14px;
+    height: 300px;
+    z-index: 2 !important;
+    opacity: 100 !important;
+  }
+}

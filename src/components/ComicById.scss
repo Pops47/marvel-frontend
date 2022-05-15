@@ -1,0 +1,17 @@
+.comicsInFavoritePage {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  .pTitle {
+    font-size: 1em;
+  }
+  .pDesc {
+    display: none;
+  }
+}

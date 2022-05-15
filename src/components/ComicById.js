@@ -1,16 +1,21 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./ComicById.scss";
 
-function CharacterById({ characterId }) {
+//Component displaying informations about a comic based on his ID
+
+function ComicById({ comicId }) {
+  //states for request to backend
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
-
+  // request to backend for comics by character ID
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend-by-pops.herokuapp.com/character/${characterId}`
+          `https://marvel-backend-by-pops.herokuapp.com/comic/${comicId}`
         );
+
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -18,20 +23,20 @@ function CharacterById({ characterId }) {
       }
     };
     fetchData();
-  }, [characterId]);
-
+  }, [comicId]);
+  //Comics By Character Page:
   return isLoading ? (
     <p>Loading...</p>
   ) : (
-    <div>
+    <div className="comicsInFavoritePage">
       <img
         src={`${data.thumbnail.path}/landscape_xlarge.${data.thumbnail.extension}`}
         alt=""
       />
-      <p>{data.name}</p>
-      <p>{data.description}</p>
+      <p className="pTitle">{data.title}</p>
+      <p className="pDesc">{data.description}</p>
     </div>
   );
 }
 
-export default CharacterById;
+export default ComicById;

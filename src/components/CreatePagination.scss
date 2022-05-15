@@ -1,0 +1,21 @@
+.pagination-bar {
+  display: flex;
+  div {
+    height: 100%;
+    .actual-page {
+      background-color: aliceblue;
+      color: black;
+    }
+    button {
+      border-radius: 50%;
+      height: 100%;
+      width: 30px;
+      margin-right: 5px;
+    }
+    button:hover {
+      opacity: 60%;
+      background-color: aliceblue;
+      color: black;
+    }
+  }
+}
