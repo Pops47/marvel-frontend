@@ -23,7 +23,7 @@ function Comics({ favComics, handleFavComics }) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend-by-pops.herokuapp.com/comics?title=${comicsSearch}&skip=${skip}`
+          `https://marvel-backend-i41r.onrender.com/comics?title=${comicsSearch}&skip=${skip}`
         );
         setData(response.data);
         setIsLoading(false);
