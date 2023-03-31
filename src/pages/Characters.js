@@ -25,7 +25,7 @@ function Characters({ favCharacters, handleFavCharacters }) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend-by-pops.herokuapp.com/characters?name=${charactersSearch}&skip=${skip}`
+          `https://marvel-backend-i41r.onrender.com/characters?name=${charactersSearch}&skip=${skip}`
         );
         setData(response.data);
         setIsLoading(false);
