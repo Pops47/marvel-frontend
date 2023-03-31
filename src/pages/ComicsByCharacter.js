@@ -16,7 +16,7 @@ function ComicsByCharacter({ favComics, handleFavComics }) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend-by-pops.herokuapp.com/comics/${characterId}`
+          `https://marvel-backend-i41r.onrender.com/comics/${characterId}`
         );
         setData(response.data);
         setIsLoading(false);
