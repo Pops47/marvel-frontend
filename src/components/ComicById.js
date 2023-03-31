@@ -13,7 +13,7 @@ function ComicById({ comicId }) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://marvel-backend-by-pops.herokuapp.com/comic/${comicId}`
+          `https://marvel-backend-i41r.onrender.com/comic/${comicId}`
         );
 
         setData(response.data);
