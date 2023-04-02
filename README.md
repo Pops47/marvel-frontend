@@ -18,10 +18,10 @@
 ## 👩‍💻 What did I learn with this project ?
 
 - Design a website from scratch, integrate all pages
-- Use CSS to improve UX/UI
+- Use CSS and sass to improve UX/UI
 - Create my own crud API with Express.js (request an external API, hide API key, use asynchronous fetch on front side to display data)
-- Use React to create searchbars, paginations, toggle favorite buttons, etc..
-- Use local memory to save favorites
+- Use React components and states to create searchbars, paginations, toggle favorite buttons, etc..
+- Use local memory (cookies) to save favorites
 - Hosting website (Netlify and Heroku/Render)
 - Read API documentation
 
