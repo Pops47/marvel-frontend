@@ -29,3 +29,4 @@
 
 - Register with a password and save custom favorites in a database
 - Add auto-completion in searchbars
+- Animate loading
