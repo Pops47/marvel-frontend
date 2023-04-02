@@ -70,6 +70,9 @@
         .fav-on {
           background-color: darkred;
         }
+        .fav-on:hover {
+          background-color: lightred;
+        }
       }
     }
     .element:hover {
