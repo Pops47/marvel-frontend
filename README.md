@@ -1,4 +1,4 @@
-# 🕸️ Marvel FrontEnd 🕸️
+# 🕸️ Marvel project 🕸️
 
 [![homepage of Marvel website](https://github.com/Pops47/marvel-frontend/blob/main/src/assets/images/marvel-readme.png 'Go to Marvel website')](https://marvel-technical-test.netlify.app/)
 
