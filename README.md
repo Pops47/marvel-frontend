@@ -1,6 +1,6 @@
 # Marvel FrontEnd
 
-[!homepage of Marvel website](https://github.com/Pops47/marvel-frontend/blob/main/src/assets/images/marvel-readme.png)
+![homepage of Marvel website](https://github.com/Pops47/marvel-frontend/blob/main/src/assets/images/marvel-readme.png)
 
 ## What techno did I use ?
 
@@ -18,7 +18,7 @@
 ## What did I learn with this project ?
 - Design a website from scratch, integrate all pages
 - Use CSS to improve UX/UI
-- Create my own crud API requesting Marvel API. Call those routes on front side to display elements
+- Create my own crud API with Express.js (request an external API, hide API key, use asynchronous fetch on front side to display data)
 - Use React to create searchbars, paginations, toggle favorite buttons, etc..
 - Use local memory to save favorites
 - Hosting website (Netlify and Heroku/Render)
