@@ -72,6 +72,9 @@
         }
       }
     }
+    .element:hover {
+      cursor: pointer
+    }
     .element:hover .description {
       display: block;
       position: absolute;
@@ -80,6 +83,7 @@
       height: 300px;
       z-index: 2;
       opacity: 85%;
+      
     }
     .description {
       font-family: Roboto;
