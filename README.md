@@ -25,8 +25,10 @@
 - Hosting website (Netlify and Heroku/Render)
 - Read API documentation
 
-## 🚀 What feature could I had ?
+## 🚀 What features could I had ?
 
 - Register with a password and save custom favorites in a database
 - Add auto-completion in searchbars
 - Animate loading
+- Finish 404 page
+- Improve loading time
