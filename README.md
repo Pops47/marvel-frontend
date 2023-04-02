@@ -1,24 +1,31 @@
-# Marvel FrontEnd
+# 🕸️ Marvel FrontEnd 🕸️
 
-![homepage of Marvel website](https://github.com/Pops47/marvel-frontend/blob/main/src/assets/images/marvel-readme.png)
+[![homepage of Marvel website](https://github.com/Pops47/marvel-frontend/blob/main/src/assets/images/marvel-readme.png 'Go to Marvel website')](https://marvel-technical-test.netlify.app/)
 
-## What techno did I use ?
+## 🧰 What techno did I use ?
 
 - Frontend was made with ReactJS
 - Backend was made with Node.js using Express
 - The Express server consume an API made by LeReacteur (quite similar to [Marvel public API](https://developer.marvel.com/))
 
-## What can you do on this website ?
+## 🖱️ What can you do on this website ?
 
 - Display all characters and comics of the Marvel API
 - Display related comics of any caracter.
 - Save your favorite characters and comics
 - Search elements by name or title
 
-## What did I learn with this project ?
+## 👩‍💻 What did I learn with this project ?
+
 - Design a website from scratch, integrate all pages
 - Use CSS to improve UX/UI
 - Create my own crud API with Express.js (request an external API, hide API key, use asynchronous fetch on front side to display data)
 - Use React to create searchbars, paginations, toggle favorite buttons, etc..
 - Use local memory to save favorites
 - Hosting website (Netlify and Heroku/Render)
+- Read API documentation
+
+## 🚀 What feature could I had ?
+
+- Register with a password and save custom favorites in a database
+- Add auto-completion in searchbars
