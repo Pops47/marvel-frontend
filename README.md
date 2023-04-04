@@ -27,9 +27,8 @@
 
 ## 🚀 Still to do :
 
-- Check responsive
-- Register with a password and save custom favorites in a database
-- Add auto-completion in searchbars
-- Animate loading
+- /!\ Update CSS for responsive 
+- Animate loading + improve loading time
 - Finish 404 page
-- Improve loading time
+- Add authentification and save custom favorites in a database
+- Add auto-completion in searchbars
