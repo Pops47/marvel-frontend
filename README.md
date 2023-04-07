@@ -25,7 +25,7 @@
 - Hosting website (Netlify and Heroku/Render)
 - Read API documentation
 
-## 🚀 Still to do :
+## 🚀 Left to be done :
 
 - /!\ Update CSS for responsive 
 - Animate loading + improve loading time
