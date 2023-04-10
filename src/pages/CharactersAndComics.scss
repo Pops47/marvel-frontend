@@ -111,6 +111,9 @@
   }
 }
 @media (max-width: 768px) {
+  .pagination{
+    gap: 30px !important
+  }
   .element {
     width: calc((100% - 30px) / 3) !important;
   }
@@ -120,7 +123,7 @@
     width: calc((100% - 20px) / 2) !important;
   }
   .pagination{
-    gap: 30px !important
+    gap: 15px !important
   }
   .pagination > p {
     font-size: 0.75rem;
