@@ -29,5 +29,16 @@ header {
       border-bottom: solid darkred 4px;
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      button {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 576px) {
+      button {
+        font-size: 0.8rem;
+      }
+    }
   }
 }
