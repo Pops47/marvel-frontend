@@ -13,6 +13,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-right: 15px;
       input {
         border: none;
         color: black;
@@ -62,7 +63,7 @@
           font-size: 16px;
         }
         button:hover {
-        cursor: pointer
+          cursor: pointer;
         }
         .fav-off:hover {
           background-color: grey;
@@ -76,7 +77,7 @@
       }
     }
     .element:hover {
-      cursor: pointer
+      cursor: pointer;
     }
     .element:hover .description {
       display: block;
@@ -86,7 +87,6 @@
       height: 300px;
       z-index: 2;
       opacity: 85%;
-      
     }
     .description {
       font-family: Roboto;
@@ -97,5 +97,29 @@
       display: none;
       padding: 10px;
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .element {
+    width: calc((100% - 50px) / 5) !important;
+  }
+}
+@media (max-width: 992px) {
+  .element {
+    width: calc((100% - 40px) / 4) !important;
+  }
+}
+@media (max-width: 768px) {
+  .element {
+    width: calc((100% - 30px) / 3) !important;
+  }
+}
+@media (max-width: 576px) {
+  .element {
+    width: calc((100% - 20px) / 2) !important;
+  }
+  .pagination > p {
+    font-size: 0.75rem;
   }
 }
