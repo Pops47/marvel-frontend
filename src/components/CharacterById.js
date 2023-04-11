@@ -25,7 +25,13 @@ function CharacterById({ characterId, page }) {
   }, [characterId]);
 
   return isLoading ? (
-    <p>Loading...</p>
+    <div>
+      <p>Loading...</p>
+      <img
+        src="https://assets9.lottiefiles.com/private_files/lf30_C61K8f.json"
+        alt=""
+      />
+    </div>
   ) : (
     <div
       className={

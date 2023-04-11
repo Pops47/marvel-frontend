@@ -6,6 +6,9 @@
       background-color: aliceblue;
       color: black;
     }
+    p {
+      margin-right: 5px;
+    }
     button {
       border-radius: 50%;
       height: 100%;
@@ -16,7 +19,7 @@
       opacity: 60%;
       background-color: aliceblue;
       color: black;
-      cursor: pointer
+      cursor: pointer;
     }
   }
 }
