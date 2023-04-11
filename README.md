@@ -27,7 +27,7 @@
 
 ## 🚀 Left to be done :
 
-- /!\ Update CSS for responsive 
+- Responsive in favorite page
 - Animate loading + improve loading time
 - Finish 404 page
 - Add authentification and save custom favorites in a database
