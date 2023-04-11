@@ -1,7 +1,7 @@
 .both-columns {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 20px;
   display: flex;
   gap: 100px;
   justify-content: space-between;
@@ -31,7 +31,7 @@
     font-size: 16px;
   }
   button:hover {
-  cursor: pointer
+    cursor: pointer;
   }
   .fav-off:hover {
     background-color: grey;
