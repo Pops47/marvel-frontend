@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-left: 20px;
 
   .top-container {
     display: flex;
@@ -111,8 +112,8 @@
   }
 }
 @media (max-width: 768px) {
-  .pagination{
-    gap: 30px !important
+  .pagination {
+    gap: 30px !important;
   }
   .element {
     width: calc((100% - 30px) / 3) !important;
@@ -122,10 +123,19 @@
   .element {
     width: calc((100% - 20px) / 2) !important;
   }
-  .pagination{
-    gap: 15px !important
+  .searchbar {
+    margin-bottom: 20px;
+  }
+  .pagination {
+    gap: 15px !important;
+    justify-content: space-between !important;
   }
   .pagination > p {
     font-size: 0.75rem;
+    padding-right: 20px;
+  }
+  .top-container {
+    flex-direction: column;
+    height: 60px !important;
   }
 }
